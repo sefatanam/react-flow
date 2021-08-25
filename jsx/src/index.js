@@ -3,7 +3,12 @@ import React from 'react';
 import ReactDOM from "react-dom";
 // create react component
 const App = () => {
-    return <div>Hi There</div>;
+
+    window.navigator.geolocation.getCurrentPosition(
+        (position) => console.log(position),
+        (error) => console.log(error)
+    );
+    return <div>Latitude : </div>;
 };
 // take the react component and show in the screen
-ReactDOM.render(<App/> ,document.querySelector("#root"))
+ReactDOM.render(<App/>, document.querySelector("#root"))
