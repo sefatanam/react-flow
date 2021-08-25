@@ -1,9 +1,30 @@
-// import react and react DOM
 import React from 'react';
 import ReactDOM from "react-dom";
-// create react component
+import ApprovalCard from "./ApprovalCard";
+import CommentDetail from "./CommentDetail";
+import faker from 'faker';
+
 const App = () => {
-    return <div>Hi There</div>;
+    return (
+        <div className="ui container comments">
+            <br/>
+            <ApprovalCard>
+                <CommentDetail author="Sam" timeAgo="Today at 4.45PM" avatar={faker.image.avatar()} content="Nice"/>
+            </ApprovalCard>
+
+            <ApprovalCard>
+                <CommentDetail author="Dam" timeAgo="Today at 5.45PM" avatar={faker.image.avatar()} content="Congrats"/>
+
+            </ApprovalCard>
+            <ApprovalCard>
+                <CommentDetail author="Jon" timeAgo="Today at 6.45PM" avatar={faker.image.avatar()} content="Superv"/>
+            </ApprovalCard>
+
+            <ApprovalCard>
+                <h2>Warning </h2>
+                Are you sure about that ?
+            </ApprovalCard>
+        </div>
+    );
 };
-// take the react component and show in the screen
-ReactDOM.render(<App/> ,document.querySelector("#root"))
+ReactDOM.render(<App/>, document.querySelector("#root"))
