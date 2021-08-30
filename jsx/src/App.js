@@ -1,6 +1,7 @@
 import React from 'react';
 import Search from "./components/Search";
 
+/*
 
 const items = [
     {
@@ -16,6 +17,7 @@ const items = [
         content: ' You use React by creating components '
     },
 ];
+*/
 
 
 const App = () => {
