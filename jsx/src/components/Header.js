@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <div className="ui secondary pointing menu">
+        <div className="ui secondary pointing menu container">
             <a href="/" className="item">Accordion</a>
             <a href="/list" className="item">Search</a>
             <a href="/dropdown" className="item">Dropdown</a>

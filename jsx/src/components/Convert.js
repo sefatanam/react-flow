@@ -36,8 +36,8 @@ const Convert = ({language, text}) => {
 
     }, [debounceText,language])
     return (
-        <div>
-            <h1 className="ui header">
+        <div className="container" style={{margin:'10px'}}>
+            <h1 className="ui header container">
                 {translated}
             </h1>
 
