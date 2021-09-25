@@ -1,7 +1,8 @@
 import React from "react";
 import {connect} from "react-redux";
 import {signIn, signOut} from "../actions";
-
+// USERID1: 400959379170-q6rk0300uusj73fl15hbttj49s5dolpd.apps.googleusercontent.com
+// USERID2: 400959379170-1ucvg2lmu99emro0dn6ce5vasj1gir67.apps.googleusercontent.com
 class GoogleAuth extends React.Component {
 
     state = {isSignedIn: null};
@@ -9,7 +10,7 @@ class GoogleAuth extends React.Component {
     componentDidMount() {
         window.gapi.load("client:auth2", () => {
             window.gapi.client.init({
-                clientId: '400959379170-q6rk0300uusj73fl15hbttj49s5dolpd.apps.googleusercontent.com',
+                clientId: '400959379170-1ucvg2lmu99emro0dn6ce5vasj1gir67.apps.googleusercontent.com',
                 scope: 'email'
             }).then(() => {
                 this.auth = window.gapi.auth2.getAuthInstance();

@@ -1,0 +1,4 @@
+/api/.gitignore
+/api/db.json
+/api/package.json
+/api/package-lock.json
