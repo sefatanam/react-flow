@@ -1,0 +1,26 @@
+{
+  "streams": [
+    {
+      "title": "Test",
+      "description": "Test Stream",
+      "id": 1
+    },
+    {
+      "title": "With User",
+      "description": "Had a user id ",
+      "userId": "100463463887962642584",
+      "id": 4
+    },
+    {
+      "title": "React2",
+      "description": "Factor2",
+      "id": 5
+    },
+    {
+      "title": "sdf",
+      "description": "sdf",
+      "userId": "100463463887962642584",
+      "id": 6
+    }
+  ]
+}
